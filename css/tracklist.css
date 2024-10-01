@@ -1,0 +1,67 @@
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: "Bitter";
+  margin-top: 0vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  padding: 5vh;
+  background-color: rgb(238, 114, 150, 0.5);
+}
+
+
+.animation img{
+  height: 50px;
+  width: 50px;
+  animation-name: moving;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+}
+
+@keyframes moving {
+  50%{transform: translateX(50%);}
+}
+
+.content table{
+  border-top: 1px solid
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th, td{
+  border-bottom: 1px solid #444444;
+  text-align: center;
+  padding: 10px;
+}
+
+.icon {
+	display: block;
+	width: 1.5em;
+	height: 1.5em;
+	margin: 0 auto;
+	fill: currentColor;
+}
+
+.icon--youtube {
+  transition-delay: 0.1s;
+}
+
+@media screen and (max-width: 1080px) {
+  .content{
+    margin-top: 0vh;
+    margin-left: 8vh;
+    margin-right: 8vh;
+    font-size: 80%;
+    padding: 5vh;
+  }
+  .content img{
+    display: none;
+  }
+}

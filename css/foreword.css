@@ -1,0 +1,52 @@
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: "Bitter";
+  margin-top: 25vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  padding: 10vh;
+  background-color: rgb(218, 174, 220,0.5);
+}
+
+.image{
+  text-align: center;
+}
+
+.writing{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-left: 10vh;
+  line-height: 3vh;
+}
+
+.bgm{
+  opacity: 0.5;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1080px) {
+  .content{
+    margin-top: 20vh;
+    margin-left: 8vh;
+    margin-right: 8vh;
+    font-size: 80%;
+    padding: 5vh;
+  }
+  .content img{
+    width: 300px;
+  }
+  .bgm audio{
+    width: 100px;
+    height: 50px;
+  }
+  .writing{
+    margin-left: 1vh;
+  }
+}

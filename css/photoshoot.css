@@ -1,0 +1,56 @@
+.content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  font-family: "Bitter";
+  margin-top: 20vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  padding: 10vh;
+  background-color: rgb(218, 174, 220,0.5);
+}
+
+.photo {
+  margin-top: 20vh;
+          column-count: 4;
+          column-gap: 5px;
+  }
+
+  .column img {
+    padding-bottom: 10px;
+  }
+
+
+.item{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item img{
+  width: 200px;
+}
+
+@media screen and (max-width: 1080px) {
+  .photo {
+      column-count: 2;
+      column-gap: 5px;
+    }
+
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-toggler{
+    display: block !important;
+  }
+
+}
+
+/* Code for phone screen */
+@media screen and (max-width: 720px) {
+  .container {
+            column-count: 1;
+            column-gap: 10px;
+    }
+}

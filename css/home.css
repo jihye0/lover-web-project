@@ -1,0 +1,62 @@
+.content{
+  font-family: "Bitter";
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin-top: 25vh;
+  margin-bottom: 25vh;
+}
+
+.content audio{
+  margin-top: 5vh;
+  opacity: 0.7;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content h2{
+  margin-top: 5vh;
+}
+
+.content img{
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  animation-name: fade;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+footer{
+  opacity: 0.5;
+  font-family: "Raleway";
+  background-color: mistyrose;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 1080px) {
+  .content{
+    font-size: 60%;
+  }
+  .menu li {
+      margin: 10px;
+  }
+  .content img{
+    width: 60%;
+    height: 60%;
+  }
+}

@@ -1,0 +1,93 @@
+@font-face {
+  font-family:'DancingScript';
+  src: url('../fonts/DancingScript-VariableFont_wght.woff') format('woff');
+}
+
+@font-face {
+  font-family:'Raleway';
+  src: url('../fonts/Raleway-VariableFont_wght.woff') format('woff');
+}
+
+@font-face {
+  font-family:'Bitter';
+  src: url('../fonts/Bitter-VariableFont_wght.woff') format('woff');
+}
+
+body{
+  background-image: url("../imgs/background.jpg");
+  background-size: cover;
+}
+
+.menu *{
+  display: inline;
+}
+.menu li {
+    margin: 25px;
+}
+
+.menu li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 1s;
+}
+
+.menu li a:hover{
+  color: purple;
+}
+
+.menu ul {
+    padding-left: 0px;
+}
+
+.menu {
+    z-index: 1;
+    font-family: "DancingScript";
+    background-color: pink;
+    font-size: 25px;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+}
+
+.member{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+  font-family: "Raleway";
+  background-color: rgb(159, 113, 198);
+  width: 80px;
+  height: 70px;
+  border-radius: 20px 20px 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.member a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1080px) {
+  .menu{
+    font-size: 20px;
+    height: 48px;
+    padding-top: 24px;
+  }
+  .menu li {
+      margin: 10px;
+  }
+  .member{
+    width: 64px;
+    height: 56px;
+  }
+
+
+}
